@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convertation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Currency Converter</h1>
+    <div class="converter">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount">
+
+      <label for="from">From:</label>
+      <select id="from">
+        <option value="som">Som</option>
+        <option value="dollar">Dollar</option>
+        <option value="euro">Euro</option>
+      </select>
+
+      <label for="to">To:</label>
+      <select id="to">
+        <option value="som">Som</option>
+        <option value="dollar">Dollar</option>
+        <option value="euro">Euro</option>
+      </select>
+
+      <button onclick="convert()">Convert</button>
+
+      <div id="result"></div>
+    </div>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
