@@ -4,33 +4,46 @@
     <meta charset="UTF-8">
     <title>Convertation</title>
   <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+        .usd{
+            margin-top: 50px;
+        }
+        .euro{
+            margin-top: 50px;
+        }
+        input{
+            padding: 10px 20px;
+        }
+        label{
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-    <h1>Currency Converter</h1>
-    <div class="converter">
-      <label for="amount">Amount:</label>
-      <input type="number" id="amount" placeholder="Enter amount">
-
-      <label for="from">From:</label>
-      <select id="from">
-        <option value="som">Som</option>
-        <option value="dollar">Dollar</option>
-        <option value="euro">Euro</option>
-      </select>
-
-      <label for="to">To:</label>
-      <select id="to">
-        <option value="som">Som</option>
-        <option value="dollar">Dollar</option>
-        <option value="euro">Euro</option>
-      </select>
-
-      <button onclick="convert()">Convert</button>
-
-      <div id="result"></div>
+<div class="wrapper">
+    <div class="som">
+        <label for="som">Som</label>
+        <input type="text" id="som">
     </div>
-  </div>
+    <div class="usd">
+        <label for="usd">USD</label>
+        <input type="text" id="usd">
+    </div>
+    <div class="euro">
+        <label for="euro">Euro</label>
+        <input type="text" id="euro">
+    </div>
+</div>
 </body>
-<script src="app.js"></script>
+<script src="main.js"></script>
 </html>
